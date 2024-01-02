@@ -4,8 +4,14 @@ import { Header } from "@components/Header";
 import { Button } from "@components/Button";
 import { Highlight } from "@components/Highlight";
 import { Input } from "@components/Input";
+import { useNavigation } from "@react-navigation/native";
 
 const NewGroup = () => {
+  const navigation = useNavigation();
+  const hadleNew = () => {
+    navigation.navigate('players', { group: 'Rocket' });
+  }
+
   return (
     <Container>
       <Header showBackButton />
@@ -25,6 +31,7 @@ const NewGroup = () => {
         <Button 
           title="Criar"
           style={{ marginTop: 20 }}
+          onPress={hadleNew}
         />
       </Content>
     </Container>
