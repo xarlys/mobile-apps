@@ -18,7 +18,9 @@ const NewGroup = () => {
           subtitle="crie a turma para adicionar as pessoas"
         />
 
-        <Input />
+        <Input 
+          placeholder="Nome da turma"
+        />
 
         <Button 
           title="Criar"
