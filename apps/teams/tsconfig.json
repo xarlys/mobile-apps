@@ -9,6 +9,7 @@
       "@routes/*": ["./src/routes/*"],
       "@components/*": ["src/components/*"],
       "@screens/*": ["./src/screens/*"],
+      "@storage/*": ["./src/storage/*"],
       "@services/*": ["./src/services/*"],
       "@theme/*": ["./src/theme/*"],
       "@types/*": ["./src/types/*"],
